@@ -33,4 +33,16 @@ func main() {
 	fmt.Println(a)
 	b := reflect.TypeOf(fruit).Kind().String()
 	fmt.Println(b)
+
+	// map
+	x := make(map[string]string)
+	x["name"] = "moaz"
+	x["age"] = "22"
+	x["address"] = "dhaka"
+	x["height"] = "5.4"
+
+	fmt.Println(x)
+	fmt.Println(x["address"])
+	delete(x, "height")
+	fmt.Println(x)
 }
